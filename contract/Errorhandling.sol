@@ -9,7 +9,7 @@ contract Errorhandling {
         require(_amount >= 0, "amount has to be greater than 0");
         
         //rolls back the transaction if the condition is not met
-        if (_amount >= 1000) {
+        if (_amount >= 10000) {
             revert("Amount exceeds maximum limit");
         }
 
