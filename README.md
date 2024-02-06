@@ -1,4 +1,4 @@
-This is a simple smart contract that uses solidit(a smart contract language) error handling functionalities.
+This is a simple smart contract that uses solidity(a smart contract language) error handling functionalities.
 
 The contract uses three functions:
 
