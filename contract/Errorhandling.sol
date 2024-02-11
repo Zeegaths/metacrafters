@@ -20,7 +20,7 @@ contract SchoolRegister{
     function registerTeacher (string memory _Name, uint8 _age, address _teacherAddress) public {
         require(principal == msg.sender, "You have to be the principal to add a teacher");
         //ensure the teacher address does not exist
-        assert(register[_teacherAddress].teacherA == address(0));
+        assert(register[_teacherAddress].teacherA != address(0));
         register[_teacherAddress] = Teachers(_Name, _age , _teacherAddress); 
               
     }
